@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>API de carros</title>
+</head>
+<body>
+    <div id="main">
+        <h2>Digite as informações sobre o carro que deseja adicionar</h2>
+        <h3>Se desejar alterar algum item já presente adicione a posição dele, se não, não é necessário</h3>
+        <div class="formulario">
+            <input type="text" id="name-car" class="margem-padding" placeholder="Nome do Carro"> <br>
+            <input type="text" id="brand-car" class="margem-padding" placeholder="Marca do Carro"> <br>
+            <input type="text" id="color-car" class="margem-padding" placeholder="Cor do Carro"> <br>
+            <input type="text" id="posicao-car" class="margem-padding" placeholder="Posição que deseja alterar"> <br>
+            <button onclick="post()" id="button-postar" class="margem-padding">Postar</button>
+            <button onclick="put(document.getElementById('posicao-car').value)" class="margem-padding">Alterar</button>
+        </div>
+        <div class="formulario">
+            <h3>Se desejar deletar algum item já presente adicione a posição dele</h3>
+            <input type="text" id="posicao-delete" class="margem-padding" placeholder="Posição que deseja deletar"> <br>
+            <button onclick="delet(document.getElementById('posicao-delete').value)" id="button-delete" class="margem-padding">Deletar</button>
+        </div>
+        <div class="formulario">
+            <h2>Clique aqui para exibir a lista de veículos presentes!</h2>
+            <button onclick="get()" class="margem-padding">Exibir</button>
+            <ol id="lista">
+            </ol>
+        </div>
+    </div>
+    <script src="/script.js">
+    </script>
+</body>
+</html>

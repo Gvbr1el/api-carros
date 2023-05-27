@@ -1,0 +1,22 @@
+{
+  "carros": [
+    {
+      "nome": "Logan",
+      "marca": "Renault",
+      "cor": "Branco",
+      "id": 1
+    },
+    {
+      "nome": "Palio",
+      "marca": "Fiat",
+      "cor": "Vermelho",
+      "id": 2
+    },
+    {
+      "nome": "up",
+      "marca": "volkswagen",
+      "cor": "branco",
+      "id": 3
+    }
+  ]
+}
